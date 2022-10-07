@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XML", "XML", "{72386672-1BCB-4C0C-9CC8-F001A63942A3}"
+	ProjectSection(SolutionItems) = preProject
+		Category.xml = Category.xml
+		Category.xsd = Category.xsd
+		Color.xml = Color.xml
+		Color.xsd = Color.xsd
+		Dish.xml = Dish.xml
+		Dish.xsd = Dish.xsd
+		Dish.xslt = Dish.xslt
+		Dishes.xml = Dishes.xml
+		DishTest.xslt = DishTest.xslt
+		Entity.xsd = Entity.xsd
+		Material.xml = Material.xml
+		Material.xsd = Material.xsd
+		Types.xsd = Types.xsd
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlValidator", "XmlValidator\XmlValidator.csproj", "{B7669E55-9CF9-4B7F-B63C-66E77916CA6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlValidationTest", "XmlValidationTest\XmlValidationTest.csproj", "{DA1658D8-484D-4F51-B755-486535A25777}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7669E55-9CF9-4B7F-B63C-66E77916CA6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7669E55-9CF9-4B7F-B63C-66E77916CA6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7669E55-9CF9-4B7F-B63C-66E77916CA6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7669E55-9CF9-4B7F-B63C-66E77916CA6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA1658D8-484D-4F51-B755-486535A25777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA1658D8-484D-4F51-B755-486535A25777}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA1658D8-484D-4F51-B755-486535A25777}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA1658D8-484D-4F51-B755-486535A25777}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EEF01338-BBBC-4E73-8A1A-E2C91D798EF8}
+	EndGlobalSection
+EndGlobal

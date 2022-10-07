@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://dishShop/Dish"
+           xmlns="http://dishShop/Dish"
+           elementFormDefault="qualified"
+           xmlns:dse="http://dishShop/Entity"
+           xmlns:cat="http://dishShop/Category"
+           xmlns:col="http://dishShop/Color"
+           xmlns:mat="http://dishShop/Material"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:t="http://dishShop/Types"
+>
+	<xs:import namespace="http://dishShop/Entity" schemaLocation="Entity.xsd"></xs:import>
+	<xs:import namespace="http://dishShop/Category" schemaLocation="Category.xsd"></xs:import>
+	<xs:import namespace="http://dishShop/Color" schemaLocation="Color.xsd"></xs:import>
+	<xs:import namespace="http://dishShop/Material" schemaLocation="Material.xsd"></xs:import>
+	<xs:import namespace="http://dishShop/Types" schemaLocation="Types.xsd"></xs:import>
+
+	<xs:element name="Dish">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="dse:Entity">
+					<xs:all>
+						<xs:element name="Name" type="t:Name"></xs:element>
+						<xs:element name="Price" type="t:Price"></xs:element>
+						<xs:element name="Volume" type="t:Volume"></xs:element>
+						<xs:element name="Categories">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element ref="cat:Category" minOccurs="1" maxOccurs="unbounded"></xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="Color" type="col:Color" minOccurs="1" maxOccurs="1"></xs:element>
+						<xs:element name="Material" type="mat:Material" minOccurs="1" maxOccurs="1"></xs:element>
+					</xs:all>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="Dishes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Dish" minOccurs="0" maxOccurs="unbounded"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
