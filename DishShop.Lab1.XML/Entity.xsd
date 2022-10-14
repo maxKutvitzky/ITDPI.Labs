@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://dishShop/Entity"
+           elementFormDefault="qualified"
+           xmlns="http://dishShop/Entity"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:t="http://dishShop/Types"
+>
+	<xs:import namespace="http://dishShop/Types" schemaLocation="Types.xsd"></xs:import>
+
+	<xs:complexType name="Entity" abstract="true">
+		<xs:attribute name="id" type="t:Id" use="required"></xs:attribute>
+	</xs:complexType>
+</xs:schema>

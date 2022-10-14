@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://dishShop/Category"
+           xmlns="http://dishShop/Category"
+           elementFormDefault="qualified"
+           xmlns:dse="http://dishShop/Entity"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:t="http://dishShop/Types"
+>
+	<xs:import namespace="http://dishShop/Entity" schemaLocation="Entity.xsd"></xs:import>
+	<xs:import namespace="http://dishShop/Types" schemaLocation="Types.xsd"></xs:import>
+
+	<xs:element name="Category">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="dse:Entity">
+					<xs:all>
+						<xs:element name="Name" type="t:Name"></xs:element>
+					</xs:all>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

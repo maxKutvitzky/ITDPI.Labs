@@ -3,26 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XML", "XML", "{72386672-1BCB-4C0C-9CC8-F001A63942A3}"
-	ProjectSection(SolutionItems) = preProject
-		Category.xml = Category.xml
-		Category.xsd = Category.xsd
-		Color.xml = Color.xml
-		Color.xsd = Color.xsd
-		Dish.xml = Dish.xml
-		Dish.xsd = Dish.xsd
-		Dish.xslt = Dish.xslt
-		Dishes.xml = Dishes.xml
-		DishTest.xslt = DishTest.xslt
-		Entity.xsd = Entity.xsd
-		Material.xml = Material.xml
-		Material.xsd = Material.xsd
-		Types.xsd = Types.xsd
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlValidator", "XmlValidator\XmlValidator.csproj", "{B7669E55-9CF9-4B7F-B63C-66E77916CA6E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlValidationTest", "XmlValidationTest\XmlValidationTest.csproj", "{DA1658D8-484D-4F51-B755-486535A25777}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DishShop.Lab2.Parsers", "DishShop.Lab2.Parsers\DishShop.Lab2.Parsers.csproj", "{534C83FB-7BC2-4486-9428-ED88C66876C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DishShop.Lab2.Parsers.DomParser", "DishShop.Lab2.Parsers.DomParser\DishShop.Lab2.Parsers.DomParser.csproj", "{329ABA5E-CA5B-43A1-8A4B-1583D2EF7F26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DishShop.Lab2.Parsers.SaxParser", "DishShop.Lab2.Parsers.SaxParser\DishShop.Lab2.Parsers.SaxParser.csproj", "{3EEECF2C-A357-4957-B87B-F4655AF6E720}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DishShop.Lab2.Parsers.Console", "DishShop.Lab2.Parsers.Console\DishShop.Lab2.Parsers.Console.csproj", "{EBFAD79D-05BD-4F2D-8BED-E1FF64426516}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DishShop.Lab1.XML", "DishShop.Lab1.XML\DishShop.Lab1.XML.csproj", "{E62C10E7-6672-4AE9-9D62-60B60F15A3A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +31,26 @@ Global
 		{DA1658D8-484D-4F51-B755-486535A25777}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA1658D8-484D-4F51-B755-486535A25777}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA1658D8-484D-4F51-B755-486535A25777}.Release|Any CPU.Build.0 = Release|Any CPU
+		{534C83FB-7BC2-4486-9428-ED88C66876C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{534C83FB-7BC2-4486-9428-ED88C66876C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{534C83FB-7BC2-4486-9428-ED88C66876C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{534C83FB-7BC2-4486-9428-ED88C66876C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{329ABA5E-CA5B-43A1-8A4B-1583D2EF7F26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{329ABA5E-CA5B-43A1-8A4B-1583D2EF7F26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{329ABA5E-CA5B-43A1-8A4B-1583D2EF7F26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{329ABA5E-CA5B-43A1-8A4B-1583D2EF7F26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EEECF2C-A357-4957-B87B-F4655AF6E720}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EEECF2C-A357-4957-B87B-F4655AF6E720}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EEECF2C-A357-4957-B87B-F4655AF6E720}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EEECF2C-A357-4957-B87B-F4655AF6E720}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBFAD79D-05BD-4F2D-8BED-E1FF64426516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBFAD79D-05BD-4F2D-8BED-E1FF64426516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBFAD79D-05BD-4F2D-8BED-E1FF64426516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBFAD79D-05BD-4F2D-8BED-E1FF64426516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E62C10E7-6672-4AE9-9D62-60B60F15A3A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E62C10E7-6672-4AE9-9D62-60B60F15A3A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E62C10E7-6672-4AE9-9D62-60B60F15A3A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E62C10E7-6672-4AE9-9D62-60B60F15A3A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Color id="1"
+       xmlns="http://dishShop/Color"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://dishShop/Color Color.xsd">
+	<HexValue>#FF0000</HexValue>
+	<Name>Red</Name>
+</Color>
