@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dishes xmlns="http://dishShop/Dish"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://dishShop/Dish Dish.xsd"
         xmlns:mat="http://dishShop/Material"
         xmlns:col="http://dishShop/Color"
         xmlns:cat="http://dishShop/Category">

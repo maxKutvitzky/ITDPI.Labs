@@ -1,7 +1,8 @@
-﻿using System.Xml;
+﻿using DishShop.Lab1.XML.Validation.Interfaces;
+using System.Xml;
 using System.Xml.Schema;
 
-namespace XmlValidator;
+namespace DishShop.Lab1.XML.Validation.Concrete;
 
 public class XsdValidator : IValidator
 {

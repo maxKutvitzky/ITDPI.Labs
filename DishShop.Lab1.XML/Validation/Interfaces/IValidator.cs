@@ -1,4 +1,4 @@
-﻿namespace XmlValidator;
+﻿namespace DishShop.Lab1.XML.Validation.Interfaces;
 
 public interface IValidator
 {
