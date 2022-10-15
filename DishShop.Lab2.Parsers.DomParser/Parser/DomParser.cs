@@ -1,136 +1,70 @@
 ﻿using System.Xml;
-using System.Xml.Schema;
 using DishShop.Lab2.Parsers.Entities;
 using DishShop.Lab2.Parsers.Interfaces;
 
-namespace DishShop.Lab2.Parsers.DomParser.Parser
+namespace DishShop.Lab2.Parsers.DomParser.Parser;
+
+public class DomParser : IDishShopParser
 {
-    public class DomParser : IDishShopParser
+    private const string DishSchemaPath =
+        @"D:\UNIVER\3 Course\ITROI\Project\DishShop\DishShop.Lab1.XML\XML\Dish.xsd";
+
+    private readonly IDishShopMarshalMapper<Dish> _dishMapper;
+    public readonly IDishShopMarshalUtils DocumentGetter;
+
+    public DomParser(IDishShopMarshalUtils documentGetter, IDishShopMarshalMapper<Dish> dishMapper)
     {
-        public List<string> Errors = new List<string>();
-        public List<Dish> GetDishes(string path)
+        DocumentGetter = documentGetter;
+        _dishMapper = dishMapper;
+    }
+
+    public List<Dish> GetDishes(string path)
+    {
+        var doc = new XmlDocument();
+        var reader = DocumentGetter.GetReaderWithXml(path, DishSchemaPath);
+        if (reader == null) return null;
+        try
         {
-            throw new NotImplementedException();
+            var dishes = _dishMapper.XmlToObjects(reader);
+            return dishes;
         }
-
-        public Dish GetDish(string path)
+        catch (Exception e)
         {
-            XmlDocument doc = new XmlDocument();
-            try
-            {
-                doc.Load(path);
-            }
-            catch (FileNotFoundException e)
-            {
-                Errors.Add(e.Message);
-            }
+            DocumentGetter.Validator.ValidationErrors.Add("Failed to map XML to dishes");
+            return null;
+        }
+    }
 
-            if (!ValidateXml(@"D:\UNIVER\3 Course\ITROI\Project\DishShop\Dish.xsd", doc))
-            {
-                return null;
-            }
-            var parsedValue = doc.DocumentElement;
-
-            Dish dish = new Dish()
-            {
-                Id = Int32.Parse(parsedValue.Attributes[0].Value),
-                Name = parsedValue["Name"].InnerText,
-                Volume = Int32.Parse(parsedValue["Volume"].InnerText),
-                Price = Decimal.Parse(parsedValue["Price"].InnerText.Replace('.',',')),
-            };
-
-            Material material = new Material()
-            {
-                Id = Int32.Parse(parsedValue["Material"].Attributes[0].Value),
-                Name = parsedValue["Material"].InnerText
-            };
-
-            List<Category> categories = new List<Category>();
-            for (int i = 0; i < parsedValue["Categories"].ChildNodes.Count; ++i)
-            {
-                categories.Add(new()
-                {
-                    Id = Int32.Parse(parsedValue["Categories"].ChildNodes.Item(i).Attributes[0].Value),
-                    Name = parsedValue["Categories"].ChildNodes.Item(i).InnerText
-                });
-            }
-
-            Color color = new Color();
-            color.Id = Int32.Parse(parsedValue["Color"].Attributes[0].Value);
-            for (int i = 0; i < parsedValue["Color"].ChildNodes.Count; ++i)
-            {
-                if (parsedValue["Color"].ChildNodes.Item(i).Name == "Name")
-                {
-                    color.Name = parsedValue["Color"].ChildNodes.Item(i).InnerText;
-                }
-
-                color.HexValue = parsedValue["Color"].ChildNodes.Item(i).InnerText;
-            }
-
-            dish.Categories = categories;
-            dish.Color = color;
-            dish.Material = material;
+    public Dish GetDish(string path)
+    {
+        var doc = new XmlDocument();
+        var reader = DocumentGetter.GetReaderWithXml(path, DishSchemaPath);
+        if (reader == null) return null;
+        try
+        {
+            var dish = _dishMapper.XmlToObject(reader);
             return dish;
         }
-        public Category GetCategory(string path)
+        catch (Exception e)
         {
-            throw new NotImplementedException();
+            DocumentGetter.Validator.ValidationErrors.Add("Failed to map XML to dish");
+            return null;
         }
+    }
 
-        public Color GetColor(string path)
-        {
-            throw new NotImplementedException();
-        }
+    public void SetDishes(string path, List<Dish> dishes)
+    {
+        var document = new XmlDocument();
+        var xml = _dishMapper.ObjectsToXml(dishes);
+        document.LoadXml(xml);
+        document.Save(path);
+    }
 
-        public Material GetMaterial(string path)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void SetDishes(string path, List<Dish> dishes)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void SetDish(string path, Dish dish)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void SetColor(string path, Color color)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void SetMaterial(string path, Material material)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void SetCategory(string path, Category category)
-        {
-            throw new NotImplementedException();
-        }
-
-        private bool ValidateXml(string schemaPath, XmlDocument doc)
-        {
-            XmlTextReader reader = new XmlTextReader(schemaPath);
-            XmlSchema schema = XmlSchema.Read(reader, ValidateCallBack);
-            if (schema == null)
-            {
-                Errors.Add("Schema is null");
-                return false;
-            }
-            doc.XmlResolver = new XmlUrlResolver();
-            doc.Schemas.XmlResolver = new XmlUrlResolver();
-            doc.Schemas.Add(schema);
-            doc.Validate(ValidateCallBack);
-            return !Errors.Any();
-        }
-
-        private void ValidateCallBack(object sender, ValidationEventArgs args)
-        {
-            Errors.Add(args.Message);
-        }
+    public void SetDish(string path, Dish dish)
+    {
+        var document = new XmlDocument();
+        var xml = _dishMapper.ObjectToXml(dish);
+        document.LoadXml(xml);
+        document.Save(path);
     }
 }

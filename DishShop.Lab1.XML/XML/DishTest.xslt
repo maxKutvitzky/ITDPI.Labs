@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <xsl:stylesheet version="1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl"
                 xmlns:mat="http://dishShop/Material"
                 xmlns:col="http://dishShop/Color"
-                xmlns:cat="http://dishShop/Category"
->
+                xmlns:cat="http://dishShop/Category">
 	<xsl:template match="/">
 		<html>
 			<body>
 				<h1>DishTest</h1>
 				<p>
-					<xsl:value-of select="Name"/>
+					<xsl:value-of select="Name" />
 				</p>
 			</body>
 		</html>

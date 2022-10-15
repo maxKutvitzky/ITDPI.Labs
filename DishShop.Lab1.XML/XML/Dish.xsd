@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <xs:schema targetNamespace="http://dishShop/Dish"
            xmlns="http://dishShop/Dish"
            elementFormDefault="qualified"
@@ -7,8 +8,7 @@
            xmlns:col="http://dishShop/Color"
            xmlns:mat="http://dishShop/Material"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:t="http://dishShop/Types"
->
+           xmlns:t="http://dishShop/Types">
 	<xs:import namespace="http://dishShop/Entity" schemaLocation="Entity.xsd"></xs:import>
 	<xs:import namespace="http://dishShop/Category" schemaLocation="Category.xsd"></xs:import>
 	<xs:import namespace="http://dishShop/Color" schemaLocation="Color.xsd"></xs:import>

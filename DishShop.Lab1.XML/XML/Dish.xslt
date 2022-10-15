@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0"?>
+
 <xsl:stylesheet version="1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:mat="http://dishShop/Material"
@@ -16,19 +17,19 @@
 					<tr>
 						<td>Name</td>
 						<td>
-							<xsl:value-of select="Name"/>
+							<xsl:value-of select="Name" />
 						</td>
 					</tr>
 					<tr>
 						<td>Price</td>
 						<td>
-							<xsl:value-of select="Price"/>
+							<xsl:value-of select="Price" />
 						</td>
 					</tr>
 					<tr>
 						<td>Volume</td>
 						<td>
-							<xsl:value-of select="Volume"/>
+							<xsl:value-of select="Volume" />
 						</td>
 					</tr>
 
