@@ -2,11 +2,11 @@
 using DishShop.Lab2.Parsers.Entities;
 using DishShop.Lab2.Parsers.Interfaces;
 
-namespace DishShop.Lab2.Parsers.DomParser.Parser;
+namespace DishShop.Lab2.Parsers.SaxParser.Parser;
 
-public class DomParser : ParserBase, IDishShopParser
+public class SaxParser : ParserBase, IDishShopParser
 {
-    public DomParser(
+    public SaxParser(
         IDishShopMarshalUtils documentHandler,
         IDishShopMarshalMapper<Dish> dishMapper) :
         base(documentHandler, dishMapper)
@@ -27,10 +27,6 @@ public class DomParser : ParserBase, IDishShopParser
             DocumentHandler.Validator.ValidationErrors.Add("Failed to map XML to dishes");
             return null;
         }
-        finally
-        {
-            reader.Close();
-        }
     }
 
     public Dish GetDish(string path)
@@ -46,10 +42,6 @@ public class DomParser : ParserBase, IDishShopParser
         {
             DocumentHandler.Validator.ValidationErrors.Add("Failed to map XML to dish");
             return null;
-        }
-        finally
-        {
-            reader.Close();
         }
     }
 

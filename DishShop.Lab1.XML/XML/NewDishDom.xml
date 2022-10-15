@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="Dish.xslt"?>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="DishTest.xslt"?>
 
 <Dish id="1"
       xmlns="http://dishShop/Dish"
@@ -19,12 +19,15 @@
 		<col:Name>Red</col:Name>
 	</Color>
 	<Categories>
+
 		<cat:Category id="1">
 			<cat:Name>Plate</cat:Name>
 		</cat:Category>
+
 		<cat:Category id="2">
 			<cat:Name>Dinnerware</cat:Name>
 		</cat:Category>
+
 		<cat:Category id="3">
 			<cat:Name>Ceramic</cat:Name>
 		</cat:Category>

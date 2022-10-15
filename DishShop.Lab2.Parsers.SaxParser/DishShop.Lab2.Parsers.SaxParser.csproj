@@ -6,4 +6,9 @@
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\DishShop.Lab1.XML\DishShop.Lab1.XML.csproj" />
+	  <ProjectReference Include="..\DishShop.Lab2.Parsers\DishShop.Lab2.Parsers.csproj" />
+	</ItemGroup>
+
 </Project>

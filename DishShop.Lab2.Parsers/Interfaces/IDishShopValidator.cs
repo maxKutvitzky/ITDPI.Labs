@@ -6,5 +6,6 @@ public interface IDishShopValidator
 {
     public List<string> ValidationErrors { get; set; }
     bool IsValid(string path, XmlSchema schema);
+    bool IsValidString(string xml, XmlSchema schema);
     void ValidateCallBack(object sender, ValidationEventArgs args);
 }
