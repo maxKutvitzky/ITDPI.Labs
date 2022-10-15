@@ -1,6 +1,5 @@
 ﻿namespace DishShop.Lab2.Parsers.Interfaces;
 
-public interface IDishShopParser: IDishShopMarshalGet, IDishShopMarshalSet, IDishShopMarshalUtils
+public interface IDishShopParser : IDishShopMarshalGet, IDishShopMarshalSet
 {
-    
 }

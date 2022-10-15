@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <xs:schema targetNamespace="http://dishShop/Types"
            elementFormDefault="qualified"
            xmlns="http://dishShop/Types"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
->
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xs:simpleType name="Price">
 		<xs:restriction base="xs:decimal">
 			<xs:minExclusive value="0.00"></xs:minExclusive>
