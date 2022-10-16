@@ -11,13 +11,14 @@ public class XmlValidator : IDishShopValidator
     public bool IsValid(string path, XmlSchema schema)
     {
         ValidationErrors.Clear();
+
         try
         {
             var settings = GetReaderSettings(schema);
-
-            var reader = XmlReader.Create(path, settings);
-
-            while (reader.Read()) ;
+            using (var reader = XmlReader.Create(path, settings))
+            {
+                while (reader.Read()) ;
+            }
         }
         catch (Exception e)
         {
@@ -26,6 +27,22 @@ public class XmlValidator : IDishShopValidator
         }
 
         return !ValidationErrors.Any();
+    }
+
+    public bool IsValidString(string xml, XmlSchema schema)
+    {
+        ValidationErrors.Clear();
+        var tempFilePath = @"D:\UNIVER\3 Course\ITROI\Project\DishShop\DishShop.Lab1.XML\XML\temp.xml";
+        File.WriteAllText(tempFilePath, xml);
+
+        if (!IsValid(tempFilePath, schema))
+        {
+            File.Delete(tempFilePath);
+            return false;
+        }
+
+        File.Delete(tempFilePath);
+        return true;
     }
 
     public void ValidateCallBack(object sender, ValidationEventArgs args)

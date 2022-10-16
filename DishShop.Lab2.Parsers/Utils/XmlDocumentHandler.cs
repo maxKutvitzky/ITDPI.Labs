@@ -1,17 +1,25 @@
-﻿using System.Xml;
+﻿using System.Text;
+using System.Xml;
 using System.Xml.Schema;
 using DishShop.Lab2.Parsers.Interfaces;
 
 namespace DishShop.Lab2.Parsers.Utils;
 
-public class XmlDocumentGetter : IDishShopMarshalUtils
+public class XmlDocumentHandler : IDishShopMarshalUtils
 {
-    public XmlDocumentGetter(IDishShopValidator validator)
+    public XmlDocumentHandler(IDishShopValidator validator)
     {
         Validator = validator;
     }
 
     public IDishShopValidator Validator { get; }
+
+    public bool SaveDocument(string path, string xml, string schemaPath)
+    {
+        if (!Validator.IsValidString(xml, GetSchema(schemaPath))) return false;
+        File.WriteAllText(path, xml, Encoding.ASCII);
+        return true;
+    }
 
     public XmlTextReader GetReaderWithXml(string path, string schemaPath)
     {

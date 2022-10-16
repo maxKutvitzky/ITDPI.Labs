@@ -4,6 +4,6 @@ namespace DishShop.Lab2.Parsers.Interfaces;
 
 public interface IDishShopMarshalSet
 {
-    void SetDishes(string path, List<Dish> dishes);
-    void SetDish(string path, Dish dish);
+    bool SetDishes(string path, List<Dish> dishes);
+    bool SetDish(string path, Dish dish);
 }

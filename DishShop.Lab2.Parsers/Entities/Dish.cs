@@ -11,11 +11,11 @@ public class Dish : Entity
 
     public int Volume { get; set; }
 
-    public List<Category> Categories { get; set; }
+    public List<Category> Categories { get; set; } = new();
 
-    public Color Color { get; set; }
+    public Color Color { get; set; } = new();
 
-    public Material Material { get; set; }
+    public Material Material { get; set; } = new();
 
     public override string ToString()
     {

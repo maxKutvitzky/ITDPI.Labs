@@ -5,7 +5,8 @@ namespace DishShop.Lab2.Parsers.Interfaces;
 
 public interface IDishShopMarshalUtils
 {
-    public IDishShopValidator Validator { get; }
+    IDishShopValidator Validator { get; }
+    bool SaveDocument(string path, string xml, string schemaPath);
     XmlTextReader GetReaderWithXml(string path, string schemaPath);
     XmlSchema GetSchema(string path);
 }

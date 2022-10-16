@@ -88,7 +88,6 @@ public class XmlDomDishMapper : IDishShopMarshalMapper<Dish>
             color.Id = int.Parse(parsedValue["Color"].Attributes[0].Value);
             for (var i = 0; i < parsedValue["Color"].ChildNodes.Count; ++i)
             {
-                var test = parsedValue["Color"].ChildNodes.Item(i).Name;
                 if (parsedValue["Color"].ChildNodes.Item(i).Name.Contains("Name"))
                 {
                     color.Name = parsedValue["Color"].ChildNodes.Item(i).InnerText;

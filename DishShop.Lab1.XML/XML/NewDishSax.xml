@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="Dish.xslt"?>
-
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="DishTest.xslt"?>
 <Dish id="1"
       xmlns="http://dishShop/Dish"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -18,15 +17,18 @@
 		<col:HexValue>#FF0000</col:HexValue>
 		<col:Name>Red</col:Name>
 	</Color>
-	<Categories>
-		<cat:Category id="1">
+<Categories>
+
+        <cat:Category id="1" >
 			<cat:Name>Plate</cat:Name>
 		</cat:Category>
-		<cat:Category id="2">
+
+        <cat:Category id="2" >
 			<cat:Name>Dinnerware</cat:Name>
 		</cat:Category>
-		<cat:Category id="3">
+
+        <cat:Category id="3" >
 			<cat:Name>Ceramic</cat:Name>
 		</cat:Category>
-	</Categories>
+</Categories>
 </Dish>
