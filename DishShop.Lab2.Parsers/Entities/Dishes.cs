@@ -1,7 +1,6 @@
-﻿namespace DishShop.Lab2.Parsers.Entities
+﻿namespace DishShop.Lab2.Parsers.Entities;
+
+public class Dishes
 {
-    public class Dishes
-    {
-        public List<Dish> Dish { get; set; }
-    }
+    public List<Dish> Dish { get; set; }
 }

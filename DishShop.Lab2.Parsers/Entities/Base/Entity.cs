@@ -1,7 +1,6 @@
-﻿namespace DishShop.Lab2.Parsers.Entities.Base
+﻿namespace DishShop.Lab2.Parsers.Entities.Base;
+
+public abstract class Entity
 {
-    public abstract class Entity
-    {
-        public int Id { get; set; }
-    }
+    public int Id { get; set; }
 }

@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Dishes xmlns="http://dishShop/Dish"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://dishShop/Dish Dish.xsd"
@@ -7,7 +8,7 @@
         xmlns:cat="http://dishShop/Category">
 	<Dish id="1">
 		<Material id="1">
-			<mat:Name >Wood</mat:Name>
+			<mat:Name>Wood</mat:Name>
 		</Material>
 		<Color id="1">
 			<col:HexValue>#964B00</col:HexValue>
