@@ -3,17 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DishShop.Lab2.Parsers", "DishShop.Lab2.Parsers\DishShop.Lab2.Parsers.csproj", "{534C83FB-7BC2-4486-9428-ED88C66876C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DishShop.Lab2.Parsers", "DishShop.Lab2.Parsers\DishShop.Lab2.Parsers.csproj", "{534C83FB-7BC2-4486-9428-ED88C66876C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DishShop.Lab2.Parsers.DomParser", "DishShop.Lab2.Parsers.DomParser\DishShop.Lab2.Parsers.DomParser.csproj", "{329ABA5E-CA5B-43A1-8A4B-1583D2EF7F26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DishShop.Lab2.Parsers.DomParser", "DishShop.Lab2.Parsers.DomParser\DishShop.Lab2.Parsers.DomParser.csproj", "{329ABA5E-CA5B-43A1-8A4B-1583D2EF7F26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DishShop.Lab2.Parsers.SaxParser", "DishShop.Lab2.Parsers.SaxParser\DishShop.Lab2.Parsers.SaxParser.csproj", "{3EEECF2C-A357-4957-B87B-F4655AF6E720}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DishShop.Lab2.Parsers.SaxParser", "DishShop.Lab2.Parsers.SaxParser\DishShop.Lab2.Parsers.SaxParser.csproj", "{3EEECF2C-A357-4957-B87B-F4655AF6E720}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DishShop.Lab2.Parsers.Console", "DishShop.Lab2.Parsers.Console\DishShop.Lab2.Parsers.Console.csproj", "{EBFAD79D-05BD-4F2D-8BED-E1FF64426516}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DishShop.Lab2.Parsers.Console", "DishShop.Lab2.Parsers.Console\DishShop.Lab2.Parsers.Console.csproj", "{EBFAD79D-05BD-4F2D-8BED-E1FF64426516}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DishShop.Lab1.XML", "DishShop.Lab1.XML\DishShop.Lab1.XML.csproj", "{E62C10E7-6672-4AE9-9D62-60B60F15A3A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DishShop.Lab1.XML", "DishShop.Lab1.XML\DishShop.Lab1.XML.csproj", "{E62C10E7-6672-4AE9-9D62-60B60F15A3A4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DishShop.Lab1.XmlValidationTest", "DishShop.Lab1.XmlValidationTest\DishShop.Lab1.XmlValidationTest.csproj", "{31BBEC90-0FDD-4931-A0B5-F37EEA11D0D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DishShop.Lab3-4.API", "DishShop.Lab3-4.API\DishShop.Lab3-4.API.csproj", "{CF065EA7-E8E8-4BBB-9979-B4B49836282B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DishShop.Lab3-4.API.Console", "DishShop.Lab3-4.API.Console\DishShop.Lab3-4.API.Console.csproj", "{810DE286-35B4-41C7-B085-F42CC5BA4F89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{31BBEC90-0FDD-4931-A0B5-F37EEA11D0D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31BBEC90-0FDD-4931-A0B5-F37EEA11D0D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31BBEC90-0FDD-4931-A0B5-F37EEA11D0D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF065EA7-E8E8-4BBB-9979-B4B49836282B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF065EA7-E8E8-4BBB-9979-B4B49836282B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF065EA7-E8E8-4BBB-9979-B4B49836282B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF065EA7-E8E8-4BBB-9979-B4B49836282B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{810DE286-35B4-41C7-B085-F42CC5BA4F89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{810DE286-35B4-41C7-B085-F42CC5BA4F89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{810DE286-35B4-41C7-B085-F42CC5BA4F89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{810DE286-35B4-41C7-B085-F42CC5BA4F89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
