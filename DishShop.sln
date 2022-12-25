@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DishShop.Lab3-4.API", "Dish
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DishShop.Lab3-4.API.Console", "DishShop.Lab3-4.API.Console\DishShop.Lab3-4.API.Console.csproj", "{810DE286-35B4-41C7-B085-F42CC5BA4F89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DishShop.Lab5.WebApp", "DishShop.Lab5.WebApp\DishShop.Lab5.WebApp.csproj", "{DE32CF3F-DA42-4496-8128-E126AAA77B9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DishShop.Lab5.WebApp.ApiWrapper", "DishShop.Lab5.WebApp.ApiWrapper\DishShop.Lab5.WebApp.ApiWrapper.csproj", "{F7C6C78F-A7A5-4B96-9789-92D6BC131067}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{810DE286-35B4-41C7-B085-F42CC5BA4F89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{810DE286-35B4-41C7-B085-F42CC5BA4F89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{810DE286-35B4-41C7-B085-F42CC5BA4F89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE32CF3F-DA42-4496-8128-E126AAA77B9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE32CF3F-DA42-4496-8128-E126AAA77B9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE32CF3F-DA42-4496-8128-E126AAA77B9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE32CF3F-DA42-4496-8128-E126AAA77B9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7C6C78F-A7A5-4B96-9789-92D6BC131067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7C6C78F-A7A5-4B96-9789-92D6BC131067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7C6C78F-A7A5-4B96-9789-92D6BC131067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7C6C78F-A7A5-4B96-9789-92D6BC131067}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

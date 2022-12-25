@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dishes xmlns="http://dishShop/Dish"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://dishShop/Dish Dish.xsd"
+        xmlns:mat="http://dishShop/Material"
+        xmlns:col="http://dishShop/Color"
+        xmlns:cat="http://dishShop/Category">
+<Dish id="1">
+	<Name>Wooden fork</Name>
+	<Volume>30</Volume>
+	<Price>0.99</Price>
+	<Material id="1">
+		<mat:Name>Wood</mat:Name>
+	</Material>
+	<Color id="1">
+		<col:HexValue>#964B00</col:HexValue>
+		<col:Name>Brown</col:Name>
+	</Color>
+<Categories>
+
+        <cat:Category id="1" >
+			<cat:Name>Wooden</cat:Name>
+		</cat:Category>
+
+        <cat:Category id="2" >
+			<cat:Name>Forks</cat:Name>
+		</cat:Category>
+</Categories>
+</Dish>
+<Dish id="2">
+	<Name>Stainless steel fork</Name>
+	<Volume>20</Volume>
+	<Price>1.99</Price>
+	<Material id="2">
+		<mat:Name>Stainless steel</mat:Name>
+	</Material>
+	<Color id="2">
+		<col:HexValue>#C0C0C0</col:HexValue>
+		<col:Name>Silver</col:Name>
+	</Color>
+<Categories>
+
+        <cat:Category id="2" >
+			<cat:Name>Forks</cat:Name>
+		</cat:Category>
+
+        <cat:Category id="3" >
+			<cat:Name>Steel</cat:Name>
+		</cat:Category>
+</Categories>
+</Dish>
+<Dish id="3">
+	<Name>Stainless steel kettle</Name>
+	<Volume>2000</Volume>
+	<Price>199.99</Price>
+	<Material id="2">
+		<mat:Name>Stainless steel</mat:Name>
+	</Material>
+	<Color id="2">
+		<col:HexValue>#C0C0C0</col:HexValue>
+		<col:Name>Silver</col:Name>
+	</Color>
+<Categories>
+
+        <cat:Category id="4" >
+			<cat:Name>Kettles</cat:Name>
+		</cat:Category>
+
+        <cat:Category id="3" >
+			<cat:Name>Steel</cat:Name>
+		</cat:Category>
+</Categories>
+</Dish>
+</Dishes>
