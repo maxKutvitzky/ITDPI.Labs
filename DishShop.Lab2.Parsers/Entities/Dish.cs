@@ -1,18 +1,19 @@
-﻿using System.Text;
+﻿using System.ComponentModel;
+using System.Text;
 using DishShop.Lab2.Parsers.Entities.Base;
 
 namespace DishShop.Lab2.Parsers.Entities;
 
 public class Dish : Entity
 {
+    [DisplayName("Name")]
     public string Name { get; set; }
-
+    [DisplayName("Price")]
     public decimal Price { get; set; }
-
+    [DisplayName("Volume")]
     public int Volume { get; set; }
 
     public List<Category> Categories { get; set; } = new();
-
     public Color Color { get; set; } = new();
 
     public Material Material { get; set; } = new();

@@ -1,0 +1,37 @@
+﻿@model Dish
+
+<div class="d-flex flex-column justify-content-center align-items-center" id="editFormContainer">
+    <h1>Create</h1>
+    <form asp-action="CreateDish">
+        <div class="d-flex justify-content-center flex-column align-items-center" id="editorContainer">
+            <div class="d-flex flex-row" id="dishContainer">
+                <div class="form-group m-2">
+                    <label asp-for="Name" class="col-form-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                </div>
+                <div class="form-group m-2">
+                    <label asp-for="Price" class="col-form-label"></label>
+                    <input asp-for="Price" class="form-control" />
+                </div>
+                <div class="form-group m-2">
+                    <label asp-for="Volume" class="col-form-label"></label>
+                    <input asp-for="Volume" class="form-control" />
+                </div>
+            </div>
+            <div class="d-flex flex-row " id="additionalContainer">
+                <div class="form-group m-2">
+                    <label asp-for="Material.Name" class="col-form-label"></label>
+                    <input asp-for="Material.Name" class="form-control" />
+                </div>
+                <div class="form-group m-2">
+                    <label asp-for="Color.Name" class="col-form-label"></label>
+                    <input asp-for="Color.Name" class="form-control" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group m-2 d-flex justify-content-center align-self-center">
+            <button type="submit" class="btn btn-success" style="margin-right: 5px"> Save </button>
+            @Html.ActionLink("Cancel", "Index", "Home", null, new { @class = "btn btn-primary" })
+        </div>
+    </form>
+</div>

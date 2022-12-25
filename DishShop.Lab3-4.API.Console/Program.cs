@@ -2,8 +2,6 @@
 using DishShop.Lab2.Parsers.Entities;
 using DishShop.Lab2.Parsers.Utils;
 using DishShop.Lab3_4.API.Utils;
-using System;
-using System.Net.Http;
 using System.Text;
 
 string outputFilePath = PathUtils.internalStorageDirectory + "testDishes.xml";
@@ -41,7 +39,18 @@ else
         Console.WriteLine(dish.ToString());
     }
 
-    string dishToSend = mapper.ObjectToXml(dishes[0]);
+    Dish dish1 = new Dish()
+    {
+        Id = 10,
+        Categories = dishes.First().Categories,
+        Color = dishes.First().Color,
+        Material = dishes.First().Material,
+        Name = "NewDish",
+        Price = 10.99M,
+        Volume = 200
+    };
+
+    string dishToSend = mapper.ObjectToXml(dish1);
 
     var content = new StringContent(dishToSend, Encoding.UTF8, "application/xml");
 

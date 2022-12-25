@@ -1,13 +1,9 @@
 ﻿using DishShop.Lab2.Parsers.DomParser.Mappers;
 using DishShop.Lab2.Parsers.DomParser.Parser;
 using DishShop.Lab2.Parsers.Entities;
-using DishShop.Lab2.Parsers.Interfaces;
-using DishShop.Lab2.Parsers.SaxParser.Mappers;
-using DishShop.Lab2.Parsers.SaxParser.Parser;
 using DishShop.Lab2.Parsers.Utils;
 using DishShop.Lab3_4.API.Utils;
 using Microsoft.AspNetCore.Mvc;
-using System.ComponentModel.DataAnnotations;
 
 namespace DishShop.Lab3_4.API.Controllers
 {
