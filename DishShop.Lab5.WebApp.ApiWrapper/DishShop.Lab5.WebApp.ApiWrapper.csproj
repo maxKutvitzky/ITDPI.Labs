@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DishShop.Lab2.Parsers.DomParser\DishShop.Lab2.Parsers.DomParser.csproj" />
+    <ProjectReference Include="..\DishShop.Lab2.Parsers\DishShop.Lab2.Parsers.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DishShop.Lab3-4.API">
+      <HintPath>..\DishShop.Lab3-4.API\obj\Debug\net6.0\ref\DishShop.Lab3-4.API.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

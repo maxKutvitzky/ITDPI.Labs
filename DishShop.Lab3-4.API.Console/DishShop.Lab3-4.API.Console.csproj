@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>DishShop.Lab3_4.API.Console</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DishShop.Lab2.Parsers.DomParser\DishShop.Lab2.Parsers.DomParser.csproj" />
+    <ProjectReference Include="..\DishShop.Lab2.Parsers.SaxParser\DishShop.Lab2.Parsers.SaxParser.csproj" />
+    <ProjectReference Include="..\DishShop.Lab2.Parsers\DishShop.Lab2.Parsers.csproj" />
+    <ProjectReference Include="..\DishShop.Lab3-4.API\DishShop.Lab3-4.API.csproj" />
+  </ItemGroup>
+
+</Project>
